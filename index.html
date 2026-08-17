@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>UNILUK — Université Adventiste de Lukanga</title>
+<meta name="description" content="Université Adventiste de Lukanga (UNILUK) — ISTA Lukanga — ISTM Lukanga. Enseignement supérieur de qualité : théologie, gestion, santé, pédagogie et techniques appliquées.">
+<meta name="keywords" content="UNILUK, Université Adventiste de Lukanga, ISTA Lukanga, ISTM Lukanga, université RDC, études supérieures Lukanga, Haut-Lomami, inscription UNILUK">
+<meta property="og:title" content="UNILUK — Université Adventiste de Lukanga">
+<meta property="og:description" content="Former des bâtisseurs de demain, corps et esprit. Campus de l'UNILUK, ISTA et ISTM Lukanga.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&q=80">
+<meta property="og:type" content="website">
+
+<!-- SEO Image Preload for LCP -->
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=85&auto=format&fit=crop" fetchpriority="high">
+
+<!-- Structured Data / Schema.org -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Université Adventiste de Lukanga (UNILUK)",
+  "alternateName": ["UNILUK", "ISTA Lukanga", "ISTM Lukanga"],
+  "url": "https://uniluk.ac.cd",
+  "logo": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80",
+  "description": "Université Adventiste de Lukanga, ISTA et ISTM — Formation supérieure d'excellence en RDC.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lukanga",
+    "addressRegion": "Haut-Lomami",
+    "addressCountry": "RDC"
+  }
+}
+</script>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- Video.js -->
+<link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet">
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink:   { DEFAULT:'#0B2036', 50:'#f2f6fa', 100:'#dfe9f2' },
+        sky:   { 50:'#EFF8FF', 100:'#DCEFFE', 200:'#B6E0FD', 300:'#7EC9FB', 400:'#3FADF5', 500:'#1591E6', 600:'#0872C4', 700:'#0A5B9E', 800:'#0E4C81', 900:'#123F6B' },
+        sun:   { 50:'#FFF8EA', 300:'#F6C568', 400:'#F0AD3D', 500:'#E89A24', 600:'#C57E15' },
+        paper: '#F6FAFE'
+      },
+      fontFamily: {
+        display: ['"Plus Jakarta Sans"','sans-serif'],
+        body: ['"Inter"','sans-serif']
+      },
+      boxShadow: {
+        soft: '0 2px 20px -4px rgba(11,32,54,0.10)',
+        card: '0 8px 30px -10px rgba(10,91,158,0.25)'
+      }
+    }
+  }
+}
+</script>
+
+<style>
+  [x-cloak]{display:none !important}
+  html,body{font-family:'Inter',sans-serif; background:#F6FAFE; color:#0B2036;}
+  h1,h2,h3,h4,.font-display{font-family:'Plus Jakarta Sans',sans-serif;}
+  ::selection{background:#B6E0FD;color:#0B2036;}
+  ::-webkit-scrollbar{width:9px;height:9px}
+  ::-webkit-scrollbar-track{background:#EFF8FF}
+  ::-webkit-scrollbar-thumb{background:#7EC9FB;border-radius:99px}
+  ::-webkit-scrollbar-thumb:hover{background:#3FADF5}
+
+  /* ---- signature mark : trois arcs = trois institutions ---- */
+  .tri-mark{position:relative;width:1em;height:1em;display:inline-block}
+  .tri-mark svg{width:100%;height:100%;display:block}
+
+  .arc-spin{animation:arcspin 1.4s linear infinite}
+  @keyframes arcspin{to{transform:rotate(360deg)}}
+
+  /* skeleton */
+  .skel{position:relative;overflow:hidden;background:#E3EFFA}
+  .skel::after{content:'';position:absolute;inset:0;transform:translateX(-100%);
+    background:linear-gradient(90deg,transparent,rgba(255,255,255,.75),transparent);
+    animation:shimmer 1.3s infinite}
+  @keyframes shimmer{100%{transform:translateX(100%)}}
+
+  /* section divider – triple arc rule, motif signature du site */
+  .tri-rule{display:flex;align-items:center;gap:.4rem}
+  .tri-rule i{width:26px;height:3px;border-radius:99px}
+
+  .card-lift{transition:transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s}
+  .card-lift:hover{transform:translateY(-6px); box-shadow:0 18px 40px -14px rgba(10,91,158,.35)}
+
+  .underline-grow{position:relative}
+  .underline-grow::after{content:'';position:absolute;left:0;bottom:-4px;height:2px;width:0;background:#1591E6;transition:width .3s}
+  .underline-grow:hover::after,.underline-grow.active::after{width:100%}
+
+  .fade-up[x-intersect]{opacity:0;transform:translateY(18px)}
+  .reveal{opacity:1 !important;transform:none !important;transition:opacity .7s ease,transform .7s ease}
+
+  .badge{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;letter-spacing:.02em}
+
+  .video-js{border-radius:1rem;overflow:hidden}
+  .vjs-poster{background-size:cover}
+
+  input[type=file]::-webkit-file-upload-button{cursor:pointer}
+  textarea,input,select{outline:none}
+  input:focus,select:focus,textarea:focus{box-shadow:0 0 0 3px rgba(21,145,230,.25)}
+
+  .clip-wave{clip-path:polygon(0 0,100% 0,100% 92%,0 100%)}
+</style>
+</head>
+
+<body x-data="uniluk()" x-init="init()" class="antialiased text-ink" :class="(loading || mobileMenu) ? 'overflow-hidden h-screen' : ''">
+
+<!-- ============================================================ -->
+<!-- LOADER                                                        -->
+<!-- ============================================================ -->
+<div x-show="loading" x-transition:leave="transition ease-in duration-500" x-transition:leave-end="opacity-0"
+     class="fixed inset-0 z-[100] bg-ink flex flex-col items-center justify-center gap-6" style="background:radial-gradient(120% 120% at 50% 0%,#123F6B 0%,#0B2036 60%)">
+  <div class="relative w-20 h-20">
+    <svg viewBox="0 0 100 100" class="w-full h-full arc-spin">
+      <circle cx="50" cy="50" r="42" fill="none" stroke="#1591E6" stroke-width="6" stroke-linecap="round" stroke-dasharray="70 200"/>
+      <circle cx="50" cy="50" r="42" fill="none" stroke="#E89A24" stroke-width="6" stroke-linecap="round" stroke-dasharray="70 200" stroke-dashoffset="-90"/>
+      <circle cx="50" cy="50" r="42" fill="none" stroke="#7EC9FB" stroke-width="6" stroke-linecap="round" stroke-dasharray="70 200" stroke-dashoffset="-180"/>
+    </svg>
+  </div>
+  <div class="text-center px-6">
+    <p class="font-display font-extrabold tracking-wide text-white text-lg sm:text-2xl">UNILUK <span class="text-sky-400">·</span> ISTM <span class="text-sky-400">·</span> ISTA <span class="text-sky-300">Lukanga</span></p>
+    <p class="text-sky-200/70 text-xs sm:text-sm mt-2 font-medium tracking-wider" x-text="loadMsg"></p>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- NAVBAR                                                        -->
+<!-- ============================================================ -->
+<header x-cloak x-show="!loading" x-transition:enter="transition ease-out duration-700" x-transition:enter-start="opacity-0 -translate-y-3" x-transition:enter-end="opacity-100 translate-y-0"
+  class="fixed top-0 inset-x-0 z-50 transition-all duration-300"
+  :class="(scrolled || page !== 'home') ? 'bg-white/95 backdrop-blur-md shadow-soft border-b border-sky-100/60' : 'bg-transparent'">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 lg:h-[72px]">
+    <button @click="goTo('home')" class="flex items-center gap-2.5 shrink-0">
+      <span class="tri-mark text-2xl">
+        <svg viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="42" fill="none" stroke="#1591E6" stroke-width="9" stroke-linecap="round" stroke-dasharray="70 200"/>
+          <circle cx="50" cy="50" r="42" fill="none" stroke="#E89A24" stroke-width="9" stroke-linecap="round" stroke-dasharray="70 200" stroke-dashoffset="-90"/>
+          <circle cx="50" cy="50" r="42" fill="none" :stroke="(scrolled || page !== 'home') ? '#0B2036' : '#7EC9FB'" stroke-width="9" stroke-linecap="round" stroke-dasharray="70 200" stroke-dashoffset="-180"/>
+        </svg>
+      </span>
+      <span class="font-display font-extrabold text-lg leading-none transition-colors" :class="(scrolled || page !== 'home') ? 'text-ink' : 'text-white'" x-text="site.name"></span>
+    </button>
+
+    <div class="hidden lg:flex items-center gap-7 font-display text-[15px] font-semibold transition-colors" :class="(scrolled || page !== 'home') ? 'text-ink/80' : 'text-white/90'">
+      <button @click="goTo('home')" class="underline-grow transition-colors" :class="page==='home' && 'active text-sky-600'">Accueil</button>
+      <button @click="goTo('home','facultes')" class="underline-grow transition-colors">Facultés</button>
+      <button @click="goTo('home','actus')" class="underline-grow transition-colors">Actualités</button>
+      <button @click="goTo('horaires')" class="underline-grow transition-colors" :class="page==='horaires' && 'active text-sky-600'">Horaires</button>
+      <button @click="goTo('communiques')" class="underline-grow transition-colors" :class="(page==='communiques' || page==='communique-detail') && 'active text-sky-600'">Communiqués</button>
+      <button @click="goTo('institutions')" class="underline-grow transition-colors" :class="page==='institutions' && 'active text-sky-600'">Institutions</button>
+      <div class="relative" @mouseleave="vieOpen=false">
+        <button @click="vieOpen=!vieOpen" @mouseenter="vieOpen=true" class="underline-grow flex items-center gap-1 transition-colors" :class="['groupes','campus','eglise','polyclinique','galerie'].includes(page) && 'active text-sky-600'">
+          Vie Étudiante <i class="fa-solid fa-chevron-down text-[10px] transition-transform" :class="vieOpen && 'rotate-180'"></i>
+        </button>
+        <div x-show="vieOpen" x-transition x-cloak class="absolute top-full left-1/2 -translate-x-1/2 pt-3 w-60">
+          <div class="bg-white rounded-2xl shadow-card border border-sky-100 p-2">
+            <template x-for="it in [
+              {p:'groupes',l:'Groupes estudiantins',i:'fa-people-group'},
+              {p:'campus',l:'Campus & bâtiments',i:'fa-building-columns'},
+              {p:'eglise',l:'Église Adventiste',i:'fa-church'},
+              {p:'polyclinique',l:'Polyclinique',i:'fa-staff-snake'},
+              {p:'galerie',l:'Galerie photos',i:'fa-images'}]" :key="it.p">
+              <button @click="goTo(it.p); vieOpen=false" class="w-full flex items-center gap-3 text-left px-3 py-2.5 rounded-xl hover:bg-sky-50 text-ink/80 text-sm font-semibold transition-colors" :class="page===it.p && 'bg-sky-50 text-sky-600 font-bold'">
+                <i :class="'fa-solid '+it.i" class="text-sky-500 w-4"></i><span x-text="it.l"></span>
+              </button>
+            </template>
+          </div>
+        </div>
+      </div>
+      <button @click="goTo('inscription')" class="ml-1 bg-sun-500 hover:bg-sun-600 text-ink px-5 py-2.5 rounded-full shadow-soft transition-colors font-bold" :class="page==='inscription' && 'ring-2 ring-sun-400'">S'inscrire</button>
+    </div>
+
+    <button @click="mobileMenu=true" class="lg:hidden text-2xl transition-colors" :class="(scrolled || page !== 'home') ? 'text-ink' : 'text-white'"><i class="fa-solid fa-bars"></i></button>
+  </nav>
+
+</header>
+
+<main x-cloak x-show="!loading">
+
+<!-- ============================================================ -->
+<!-- PAGE : HOME                                                   -->
+<!-- ============================================================ -->
+<section x-show="page==='home'" x-transition:enter="transition ease-out duration-500" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100">
+
+  <!-- HERO CAROUSEL -->
+  <div class="relative min-h-[92vh] flex items-end overflow-hidden bg-ink" @mouseenter="stopHeroTimer()" @mouseleave="startHeroTimer()" itemscope itemtype="https://schema.org/EducationalOrganization">
+    <!-- Images Carousel Background (SEO semantic figures & high visibility) -->
+    <template x-for="(slide, idx) in heroSlides" :key="idx">
+      <figure x-show="heroIndex === idx"
+              x-transition:enter="transition ease-out duration-1000"
+              x-transition:enter-start="opacity-0 scale-105"
+              x-transition:enter-end="opacity-100 scale-100"
+              x-transition:leave="transition ease-in duration-1000"
+              x-transition:leave-start="opacity-100 scale-100"
+              x-transition:leave-end="opacity-0 scale-95"
+              class="absolute inset-0 w-full h-full m-0"
+              itemscope itemtype="https://schema.org/ImageObject">
+        <img :src="slide.img"
+             :alt="slide.alt"
+             :title="slide.title"
+             width="1600"
+             height="900"
+             :loading="idx === 0 ? 'eager' : 'lazy'"
+             :fetchpriority="idx === 0 ? 'high' : 'auto'"
+             decoding="async"
+             itemprop="contentUrl"
+             class="w-full h-full object-cover opacity-75 sm:opacity-85 transition-transform duration-[8000ms] ease-out"
+             :class="heroIndex === idx ? 'scale-105' : 'scale-100'">
+        <meta itemprop="name" :content="slide.title">
+        <meta itemprop="caption" :content="slide.caption">
+      </figure>
+    </template>
+
+    <!-- Superposed Gradients for high visibility + 100% legibility -->
+    <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/65 to-ink/20 pointer-events-none"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-ink/85 via-ink/50 to-transparent pointer-events-none"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 pt-40 w-full z-10 flex flex-col justify-end">
+      <div class="tri-rule text-sun-300 font-display font-bold text-xs sm:text-sm tracking-[.2em] uppercase mb-5 flex items-center gap-2 [text-shadow:_0_2px_8px_rgba(11,32,54,0.9)]">
+        <i class="bg-sun-400"></i>
+        <span x-text="heroSlides[heroIndex].tag">Excellence académique · Foi · Service</span>
+      </div>
+
+      <h1 class="font-display font-extrabold text-white text-4xl sm:text-6xl lg:text-7xl leading-[1.03] max-w-4xl [text-shadow:_0_4px_20px_rgba(11,32,54,0.95)]">
+        Former des bâtisseurs, <span class="text-sky-300">corps et esprit.</span>
+      </h1>
+      <p class="text-sky-100 text-base sm:text-lg max-w-2xl mt-6 leading-relaxed [text-shadow:_0_2px_10px_rgba(11,32,54,0.9)] font-medium">
+        L'Université Adventiste de Lukanga rassemble trois institutions — UNILUK, ISTA et ISTM — au cœur d'un même campus, pour préparer une génération de leaders compétents et intègres.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-between gap-6 mt-9">
+        <div class="flex flex-wrap gap-4">
+          <button @click="goTo('inscription')" class="bg-sun-500 hover:bg-sun-600 text-ink font-display font-bold px-7 py-3.5 rounded-full shadow-card transition-all hover:scale-105 flex items-center gap-2">
+            S'inscrire à UNILUK <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <button @click="goTo('institutions')" class="border border-white/50 hover:bg-white/20 text-white font-display font-semibold px-7 py-3.5 rounded-full transition-all backdrop-blur-md">
+            Découvrir nos institutions
+          </button>
+        </div>
+
+        <!-- Contrôles du Carrousel avec ARIA & SEO -->
+        <div class="flex items-center gap-3 bg-ink/65 backdrop-blur-md p-2 rounded-full border border-white/20 shadow-card">
+          <button @click="prevHero()" aria-label="Image précédente du carrousel" class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/30 text-white flex items-center justify-center transition-colors" title="Image précédente">
+            <i class="fa-solid fa-chevron-left text-xs"></i>
+          </button>
+
+          <div class="flex items-center gap-1.5 px-2">
+            <template x-for="(slide, idx) in heroSlides" :key="idx">
+              <button @click="setHero(idx)" :aria-label="'Aller à la diapositive ' + (idx + 1) + ': ' + slide.title" class="h-2 rounded-full transition-all duration-300" :class="heroIndex === idx ? 'w-7 bg-sun-400' : 'w-2 bg-white/40 hover:bg-white/80'"></button>
+            </template>
+          </div>
+
+          <button @click="nextHero()" aria-label="Image suivante du carrousel" class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/30 text-white flex items-center justify-center transition-colors" title="Image suivante">
+            <i class="fa-solid fa-chevron-right text-xs"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- A PROPOS -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 grid lg:grid-cols-2 gap-14 items-center">
+    <div class="relative">
+      <div class="rounded-[1.75rem] overflow-hidden shadow-card">
+        <img :src="about.image" class="w-full h-[420px] object-cover" alt="Étudiants UNILUK">
+      </div>
+      <div class="absolute -bottom-7 -right-6 sm:-right-10 bg-white rounded-2xl shadow-card p-5 w-52 border border-sky-100">
+        <p class="font-display font-extrabold text-3xl text-sky-600" x-text="about.highlight_value"></p>
+        <p class="text-xs text-ink/60 font-semibold mt-1" x-text="about.highlight_label"></p>
+      </div>
+    </div>
+    <div>
+      <p class="tri-rule text-sky-600 font-display font-bold text-xs tracking-[.2em] uppercase mb-4"><i class="bg-sky-500"></i><span x-text="about.subtitle"></span></p>
+      <h2 class="font-display font-extrabold text-3xl sm:text-4xl leading-tight" x-text="about.title"></h2>
+      <p class="text-ink/65 mt-5 leading-relaxed" x-text="about.content"></p>
+      <div class="grid sm:grid-cols-2 gap-4 mt-8">
+        <template x-for="pt in [
+          {i:'fa-book-open-reader',t:'Corps enseignant qualifié',d:'Professeurs et chercheurs expérimentés'},
+          {i:'fa-hands-holding-circle',t:'Encadrement de proximité',d:'Un accompagnement personnalisé de chaque étudiant'},
+          {i:'fa-seedling',t:'Formation intégrale',d:'Intellect, spiritualité, santé et service'},
+          {i:'fa-network-wired',t:'Trois institutions, un campus',d:'UNILUK, ISTA et ISTM réunis à Lukanga'}]" :key="pt.t">
+          <div class="flex gap-3">
+            <div class="w-10 h-10 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center shrink-0"><i :class="'fa-solid '+pt.i"></i></div>
+            <div>
+              <p class="font-display font-bold text-sm" x-text="pt.t"></p>
+              <p class="text-ink/55 text-xs mt-0.5" x-text="pt.d"></p>
+            </div>
+          </div>
+        </template>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="bg-ink relative overflow-hidden clip-wave py-20">
+    <div class="absolute inset-0 opacity-20" style="background:radial-gradient(60% 60% at 80% 20%,#1591E6 0%,transparent 70%)"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative grid grid-cols-2 md:grid-cols-5 gap-8" x-intersect.once="animateStats()">
+      <template x-for="s in stats" :key="s.label">
+        <div class="text-center">
+          <i :class="'fa-solid '+s.icon" class="text-sun-400 text-2xl mb-3"></i>
+          <p class="font-display font-extrabold text-3xl sm:text-4xl text-white" x-text="s.display + s.suffix"></p>
+          <p class="text-sky-200/70 text-xs sm:text-sm mt-2 font-medium" x-text="s.label"></p>
+        </div>
+      </template>
+    </div>
+  </div>
+
+  <!-- FACULTES -->
+  <div id="facultes" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
+      <div>
+        <p class="tri-rule text-sky-600 font-display font-bold text-xs tracking-[.2em] uppercase mb-4"><i class="bg-sky-500"></i>Nos facultés</p>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl">Choisissez votre voie</h2>
+      </div>
+      <p class="text-ink/55 max-w-md text-sm">Cliquez sur une faculté pour découvrir son programme complet et vous inscrire directement.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
+      <template x-for="f in faculties" :key="f.id">
+        <button @click="openFaculty(f)" class="text-left group card-lift bg-white rounded-2xl overflow-hidden border border-sky-100 shadow-soft">
+          <div class="h-48 overflow-hidden relative">
+            <img :src="f.img" :alt="f.name" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 left-3 badge bg-white/90 backdrop-blur text-sky-700 text-[11px] px-2.5 py-1 rounded-full" x-text="f.code"></span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-display font-bold text-lg leading-snug" x-text="f.name"></h3>
+            <p class="text-ink/55 text-sm mt-2 line-clamp-2" x-text="f.short"></p>
+            <p class="text-sky-600 font-display font-bold text-sm mt-4 flex items-center gap-2">En savoir plus <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i></p>
+          </div>
+        </button>
+      </template>
+    </div>
+  </div>
+
+  <!-- ACTUALITES -->
+  <div id="actus" class="bg-sky-50/60 py-20 lg:py-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="tri-rule text-sky-600 font-display font-bold text-xs tracking-[.2em] uppercase mb-4"><i class="bg-sky-500"></i>Actualités</p>
+      <h2 class="font-display font-extrabold text-3xl sm:text-4xl mb-12">La vie de notre campus</h2>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
+        <template x-for="a in articles" :key="a.id">
+          <div class="card-lift bg-white rounded-2xl overflow-hidden border border-sky-100 shadow-soft flex flex-col">
+            <div class="h-44 overflow-hidden relative">
+              <img :src="a.img" :alt="a.title" class="w-full h-full object-cover">
+              <span class="badge absolute top-3 left-3 text-[11px] px-2.5 py-1 rounded-full text-white" :class="a.catColor" x-text="a.cat"></span>
+            </div>
+            <div class="p-5 flex flex-col flex-1">
+              <p class="text-ink/40 text-xs font-semibold" x-text="a.date"></p>
+              <h3 class="font-display font-bold text-base mt-1 leading-snug" x-text="a.title"></h3>
+              <p class="text-ink/55 text-sm mt-2 line-clamp-2 flex-1" x-text="a.short"></p>
+              <button @click="openArticle(a)" class="mt-4 text-sky-600 font-display font-bold text-sm flex items-center gap-2 self-start">Consulter <i class="fa-solid fa-arrow-right text-xs"></i></button>
+            </div>
+          </div>
+        </template>
+      </div>
+    </div>
+  </div>
+
+  <!-- TEMOIGNAGES -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+    <p class="tri-rule text-sky-600 font-display font-bold text-xs tracking-[.2em] uppercase mb-4"><i class="bg-sky-500"></i>Témoignages</p>
+    <h2 class="font-display font-extrabold text-3xl sm:text-4xl mb-12">Ce qu'ils disent de l'UNILUK</h2>
+
+    <div class="relative">
+      <div class="overflow-hidden rounded-3xl bg-ink relative">
+        <div class="absolute inset-0 opacity-25" style="background:radial-gradient(50% 80% at 10% 10%,#1591E6,transparent)"></div>
+        <div class="relative px-6 sm:px-16 py-14 sm:py-20 text-center min-h-[300px] flex flex-col items-center justify-center">
+          <template x-for="(t,i) in testimonials" :key="i">
+            <div x-show="tIndex===i" x-transition.opacity.duration.500ms>
+              <i class="fa-solid fa-quote-left text-sun-400 text-3xl"></i>
+              <p class="text-white text-lg sm:text-2xl font-display font-medium leading-relaxed max-w-3xl mx-auto mt-5" x-text="t.quote"></p>
+              <div class="flex items-center justify-center gap-3 mt-8">
+                <img :src="t.avatar" class="w-12 h-12 rounded-full object-cover border-2 border-sky-400">
+                <div class="text-left">
+                  <p class="text-white font-display font-bold text-sm" x-text="t.name"></p>
+                  <p class="text-sky-300 text-xs" x-text="t.role"></p>
+                </div>
+              </div>
+            </div>
+          </template>
+        </div>
+      </div>
+      <div class="flex justify-center gap-2 mt-6">
+        <template x-for="(t,i) in testimonials" :key="i">
+          <button @click="tIndex=i" class="h-2 rounded-full transition-all" :class="tIndex===i ? 'w-8 bg-sky-500' : 'w-2 bg-sky-200'"></button>
+        </template>
+      </div>
+    </div>
+  </div>
+
+  <!-- INSCRIPTION (aperçu) -->
+  <div id="inscription-home">
+    <template x-teleport-fallback></template>
+  </div>
+  <div x-html="''"></div>
+  <div id="inscription-preview" class="bg-gradient-to-br from-sky-700 to-sky-900 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-20" style="background:radial-gradient(60% 60% at 90% 10%,#F0AD3D,transparent)"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 relative grid lg:grid-cols-2 gap-14 items-center">
+      <div class="text-white">
+        <p class="tri-rule text-sun-300 font-display font-bold text-xs tracking-[.2em] uppercase mb-4"><i class="bg-sun-400"></i>Admissions</p>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl leading-tight">Prêt à rejoindre l'UNILUK ?</h2>
+        <p class="text-sky-100/80 mt-5 leading-relaxed max-w-md">Complétez le formulaire d'inscription en quelques minutes : vos informations, la faculté souhaitée, votre diplôme et votre mot de motivation.</p>
+        <button @click="goTo('inscription')" class="mt-8 bg-sun-500 hover:bg-sun-600 text-ink font-display font-bold px-7 py-3.5 rounded-full shadow-card">Accéder au formulaire complet</button>
+      </div>
+      <div class="bg-white rounded-3xl shadow-card p-7 sm:p-9" @submit.prevent="submitRegistration(true)">
+        <form @submit.prevent="submitRegistration(true)" class="space-y-4">
+          <div class="grid grid-cols-2 gap-4">
+            <input x-model="reg.nom" required placeholder="Nom" class="border border-sky-100 rounded-xl px-4 py-3 text-sm bg-sky-50/50">
+            <input x-model="reg.postnom" required placeholder="Postnom" class="border border-sky-100 rounded-xl px-4 py-3 text-sm bg-sky-50/50">
+          </div>
+          <input x-model="reg.prenom" required placeholder="Prénom" class="w-full border border-sky-100 rounded-xl px-4 py-3 text-sm bg-sky-50/50">
+          <select x-model="reg.faculte" required class="w-full border border-sky-100 rounded-xl px-4 py-3 text-sm bg-sky-50/50">
+            <option value="" disabled selected>Choisir une faculté</option>
+            <template x-for="f in faculties" :key="f.id"><option :value="f.id" x-text="f.name"></option></template>
+          </select>
+          <button type="submit" class="w-full bg-ink hover:bg-sky-900 text-white font-display font-bold py-3.5 rounded-xl transition-colors">Continuer mon inscription <i class="fa-solid fa-arrow-right ml-1"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PAGE : HORAIRES                                               -->
+<!-- ============================================================ -->
+<section x-show="page==='horaires'" x-transition:enter="transition ease-out duration-500" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" class="pt-32 pb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <p class="tri-rule text-sky-600 font-display font-bold text-xs tracking-[.2em] uppercase mb-4"><i class="bg-sky-500"></i>Vie académique</p>
+  <h1 class="font-display font-extrabold text-3xl sm:text-4xl">Horaires des cours</h1>
+  <p class="text-ink/55 mt-3 max-w-2xl">Sélectionnez votre faculté pour consulter l'horaire officiel en vigueur au format PDF.</p>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+    <template x-for="f in faculties" :key="f.id">
+      <button @click="openSchedule(f)" class="card-lift text-left bg-white rounded-2xl border border-sky-100 shadow-soft p-6 flex items-center gap-4">
+        <div class="w-14 h-14 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center text-xl shrink-0"><i class="fa-solid fa-calendar-days"></i></div>
+        <div class="flex-1">
+          <p class="font-display font-bold text-sm leading-snug" x-text="f.name"></p>
+          <p class="text-ink/45 text-xs mt-1">Horaire · PDF officiel</p>
+        </div>
+        <i class="fa-solid fa-chevron-right text-sky-400"></i>
+      </button>
+    </template>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PAGE : COMMUNIQUES (liste)                                    -->
+<!-- ============================================================ -->
+<section x-show="page==='communiques'" x-transition:enter="transition ease-out duration-500" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" class="pt-32 pb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <p class="tri-rule text-sky-600 font-display font-bold text-xs tracking-[.2em] uppercase mb-4"><i class="bg-sky-500"></i>Officiel</p>
+  <h1 class="font-display font-extrabold text-3xl sm:text-4xl">Communiqués</h1>
+  <p class="text-ink/55 mt-3 max-w-2xl">Retrouvez toutes les annonces officielles de la direction académique et du rectorat.</p>
+
+  <div class="mt-12 divide-y divide-sky-100 border-y border-sky-100">
+    <template x-for="c in announcements" :key="c.id">
+      <button @click="openAnnouncement(c)" class="w-full text-left py-6 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 hover:bg-sky-50/60 px-3 -mx-3 rounded-xl transition-colors">
+        <span class="badge text-[11px] px-3 py-1 rounded-full text-white shrink-0 w-fit" :class="c.color" x-text="c.tag"></span>
+        <div class="flex-1">
+          <p class="font-display font-bold" x-text="c.title"></p>
+          <p class="text-ink/45 text-xs mt-1" x-text="c.date"></p>
+        </div>
+        <span x-show="c.pdf" class="text-sky-500 text-xs font-semibold flex items-center gap-1.5 shrink-0"><i class="fa-solid fa-file-pdf"></i>PDF joint</span>
+        <i class="fa-solid fa-arrow-right text-sky-400 shrink-0"></i>
+      </button>
+    </template>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PAGE : COMMUNIQUE (détail)                                    -->
+<!-- ============================================================ -->
+<section x-show="page==='communique-detail' && selectedAnnouncement" x-transition:enter="transition ease-out duration-500" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" class="pt-32 pb-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8" x-cloak>
+  <template x-if="selectedAnnouncement">
+    <div>
+      <button @click="goTo('communiques')" class="text-sky-600 font-display font-bold text-sm flex items-center gap-2 mb-8"><i class="fa-solid fa-arrow-left"></i> Retour aux communiqués</button>
+      <span class="badge text-[11px] px-3 py-1 rounded-full text-white" :class="selectedAnnouncement.color" x-text="selectedAnnouncement.tag"></span>
+      <h1 class="font-display font-extrabold text-2xl sm:text-4xl mt-4" x-text="selectedAnnouncement.title"></h1>
+      <p class="text-ink/40 text-sm mt-3 font-medium" x-text="selectedAnnouncement.date"></p>
+      <div class="prose prose-sm sm:prose-base max-w-none mt-8 text-ink/70 leading-relaxed whitespace-pre-line" x-text="selectedAnnouncement.full"></div>
+
+      <div x-show="selectedAnnouncement.pdf" class="mt-10 bg-sky-50 rounded-2xl p-4 sm:p-6 border border-sky-100">
+        <div class="flex items-center justify-between mb-3">
+          <p class="font-display font-bold text-sm flex items-center gap-2"><i class="fa-solid fa-file-pdf text-red-500"></i> Document joint</p>
+          <a :href="selectedAnnouncement.pdf" target="_blank" class="text-sky-600 text-xs font-bold flex items-center gap-1.5"><i class="fa-solid fa-download"></i>Télécharger</a>
+        </div>
+        <div class="rounded-xl overflow-hidden bg-white border border-sky-100" style="aspect-ratio:1/1.15;max-height:70vh">
+          <iframe :src="selectedAnnouncement.pdf" class="w-full h-full" style="min-height:60vh" title="Document PDF"></iframe>
+        </div>
+      </div>
+    </div>
+  </template>
+</section>
+
+<!-- ============================================================ -->
+<!-- PAGE : ARTICLE (détail + commentaires)                        -->
+<!-- ============================================================ -->
+<section x-show="page==='article' && selectedArticle" x-transition:enter="transition ease-out duration-500" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" class="pt-32 pb-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8" x-cloak>
+  <template x-if="selectedArticle">
+    <div>
+      <button @click="goTo('home','actus')" class="text-sky-600 font-display font-bold text-sm flex items-center gap-2 mb-8"><i class="fa-solid fa-arrow-left"></i> Retour aux actualités</button>
+      <span class="badge text-[11px] px-3 py-1 rounded-full text-white" :class="selectedArticle.catColor" x-text="selectedArticle.cat"></span>
+      <h1 class="font-display font-extrabold text-2xl sm:text-4xl mt-4 leading-tight" x-text="selectedArticle.title"></h1>
+      <p class="text-ink/40 text-sm mt-3 font-medium" x-text="selectedArticle.date"></p>
+      <img :src="selectedArticle.img" class="w-full h-72 sm:h-96 object-cover rounded-2xl mt-8 shadow-card">
+      <div class="text-ink/70 leading-relaxed mt-8 space-y-4 whitespace-pre-line" x-text="selectedArticle.full"></div>
+
+      <!-- commentaires -->
+      <div class="mt-14 border-t border-sky-100 pt-10">
+        <h3 class="font-display font-extrabold text-xl mb-6">
+          <i class="fa-solid fa-comments text-sky-500 mr-2"></i>Commentaires (<span x-text="(comments[selectedArticle.id]||[]).length"></span>)
+        </h3>
+
+        <form @submit.prevent="addComment(selectedArticle.id)" class="bg-sky-50/70 rounded-2xl p-5 border border-sky-100 mb-8">
+          <div class="grid sm:grid-cols-2 gap-3">
+            <input x-model="newComment.name" required placeholder="Votre nom" class="border border-sky-100 rounded-xl px-4 py-2.5 text-sm bg-white">
+            <input x-model="newComment.role" placeholder="Vous êtes (étudiant, parent...)" class="border border-sky-100 rounded-xl px-4 py-2.5 text-sm bg-white">
+          </div>
+          <textarea x-model="newComment.text" required rows="3" placeholder="Votre commentaire..." class="w-full border border-sky-100 rounded-xl px-4 py-2.5 text-sm bg-white mt-3"></textarea>
+          <button type="submit" class="mt-3 bg-sky-600 hover:bg-sky-700 text-white font-display font-bold text-sm px-6 py-2.5 rounded-full">Publier le commentaire</button>
+        </form>
+
+        <div class="space-y-5">
+          <template x-for="c in (comments[selectedArticle.id]||[])" :key="c.id">
+            <div class="flex gap-3">
+              <div class="w-10 h-10 rounded-full bg-sky-600 text-white flex items-center justify-center font-display font-bold text-sm shrink-0" x-text="c.name.charAt(0).toUpperCase()"></div>
+              <div class="flex-1 bg-white rounded-2xl border border-sky-100 p-4">
+                <div class="flex items-center justify-between">
+                  <p class="font-display font-bold text-sm" x-text="c.name"></p>
+                  <p class="text-ink/35 text-xs" x-text="c.time"></p>
+                </div>
+                <p class="text-sky-500 text-xs font-semibold" x-text="c.role || 'Visiteur'"></p>
+                <p class="text-ink/65 text-sm mt-2" x-text="c.text"></p>
+              </div>
+            </div>
+          </template>
+        </div>
+      </div>
+    </div>
+  </template>
+</section>
+
+<!-- ============================================================ -->
+<!-- PAGE : INSTITUTIONS                                           -->
+<!-- ============================================================ -->
+<section x-show="page==='institutions'" x-transition:enter="transition ease-out duration-500" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" class="pt-32 pb-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <p class="tri-rule text-sky-600 font-display font-bold text-xs tracking-[.2em] uppercase mb-4"><i class="bg-sky-500"></i>Un campus, trois institutions</p>
+    <h1 class="font-display font-extrabold text-3xl sm:text-4xl max-w-2xl">Trois écoles, une même vision de l'excellence</h1>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-14 space-y-10">
+    <template x-for="(inst,idx) in institutions" :key="inst.id">
+      <div class="grid lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden shadow-card border border-sky-100" :class="idx%2===1 && 'lg:[direction:rtl]'">
+        <div class="h-72 lg:h-auto overflow-hidden" :class="idx%2===1 && '[direction:ltr]'">
+          <img :src="inst.img" class="w-full h-full object-cover">
+        </div>
+        <div class="bg-white p-8 sm:p-12 flex flex-col justify-center [direction:ltr]">
+          <span class="badge text-[11px] px-3 py-1 rounded-full text-white w-fit" :class="inst.color" x-text="inst.acronym"></span>
+          <h2 class="font-display font-extrabold text-2xl sm:text-3xl mt-4" x-text="inst.name"></h2>
+          <p class="text-ink/60 mt-4 leading-relaxed" x-text="inst.short"></p>
+          <button @click="openInstitution(inst)" class="mt-6 w-fit text-sky-600 font-display font-bold text-sm flex items-center gap-2">Découvrir l'institution <i class="fa-solid fa-arrow-right text-xs"></i></button>
+        </div>
+      </div>
+    </template>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PAGE : GROUPES ESTUDIANTINS                                   -->
+<!-- ============================================================ -->
+<section x-show="page==='groupes'" x-transition:enter="transition ease-out duration-500" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" class="pt-32 pb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <p class="tri-rule text-sky-600 font-display font-bold text-xs tracking-[.2em] uppercase mb-4"><i class="bg-sky-500"></i>Vie associative</p>
+  <h1 class="font-display font-extrabold text-3xl sm:text-4xl max-w-2xl">Groupes & cercles estudiantins</h1>
+  <p class="text-ink/55 mt-3 max-w-2xl">Des espaces où les étudiants approfondissent leurs passions, mènent des recherches et réalisent des projets concrets.</p>
+
+  <div class="grid md:grid-cols-3 gap-7 mt-12">
+    <template x-for="g in groups" :key="g.id">
+      <button @click="openGroup(g)" class="text-left card-lift bg-white rounded-2xl border border-sky-100 shadow-soft overflow-hidden">
+        <div class="h-40 overflow-hidden"><img :src="g.img" class="w-full h-full object-cover"></div>
+        <div class="p-6">
+          <div class="flex items-center gap-2">
+            <div class="w-9 h-9 rounded-lg text-white flex items-center justify-center text-sm" :class="g.color"><i :class="'fa-solid '+g.icon"></i></div>
+            <h3 class="font-display font-extrabold" x-text="g.acronym"></h3>
+          </div>
+          <p class="font-display font-semibold text-sm mt-3" x-text="g.name"></p>
+          <p class="text-ink/55 text-xs mt-2 line-clamp-2" x-text="g.desc"></p>
+          <p class="text-sky-600 font-display font-bold text-xs mt-4 flex items-center gap-1.5">Voir les réalisations <i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+      </button>
+    </template>
+  </div>
+
+  <!-- Contact -->
+  <div class="mt-16 bg-ink rounded-3xl p-8 sm:p-12 text-white grid sm:grid-cols-3 gap-8">
+    <div class="sm:col-span-1">
+      <h3 class="font-display font-extrabold text-xl">Contacts</h3>
+      <p class="text-sky-200/70 text-sm mt-2">Une question sur la vie associative ?</p>
+    </div>
+    <div class="sm:col-span-2 grid sm:grid-cols-2 gap-5 text-sm">
+      <div class="flex items-center gap-3"><i class="fa-solid fa-envelope text-sky-400"></i> vieassociative@uniluk.ac.cd</div>
+      <div class="flex items-center gap-3"><i class="fa-solid fa-phone text-sky-400"></i> +243 970 000 000</div>
+      <div class="flex items-center gap-3"><i class="fa-brands fa-whatsapp text-sky-400"></i> +243 890 000 000</div>
+      <div class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-sky-400"></i> Campus UNILUK, Lukanga, RDC</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PAGE : CAMPUS                                                 -->
+<!-- ============================================================ -->
+<section x-show="page==='campus'" x-transition:enter="transition ease-out duration-500" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" class="pt-32 pb-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <p class="tri-rule text-sky-600 font-display font-bold text-xs tracking-[.2em] uppercase mb-4"><i class="bg-sky-500"></i>Notre campus</p>
+    <h1 class="font-display font-extrabold text-3xl sm:text-4xl max-w-2xl">Un cadre de vie pensé pour étudier, vivre et grandir</h1>
+
+    <!-- video -->
+    <div class="mt-10 rounded-3xl overflow-hidden shadow-card" x-init="$nextTick(()=>initVideo())">
+      <video id="campus-video" class="video-js vjs-big-play-centered w-full" controls preload="none" poster="https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=1400&q=80" data-setup="{}">
+        <source src="https://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+      <template x-for="b in buildings" :key="b.id">
+        <div class="card-lift bg-white rounded-2xl overflow-hidden border border-sky-100 shadow-soft">
+          <div class="h-40 overflow-hidden"><img :src="b.img" class="w-full h-full object-cover"></div>
+          <div class="p-4">
+            <p class="font-display font-bold text-sm" x-text="b.name"></p>
+            <p class="text-ink/50 text-xs mt-1" x-text="b.desc"></p>
+          </div>
+        </div>
+      </template>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PAGE : EGLISE                                                 -->
+<!-- ============================================================ -->
+<section x-show="page==='eglise'" x-transition:enter="transition ease-out duration-500" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" class="pt-32 pb-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-14 items-center">
+    <div>
+      <p class="tri-rule text-sky-600 font-display font-bold text-xs tracking-[.2em] uppercase mb-4"><i class="bg-sky-500"></i>Vie spirituelle</p>
+      <h1 class="font-display font-extrabold text-3xl sm:text-4xl">Église Adventiste de l'UNILUK</h1>
+      <p class="text-ink/60 mt-5 leading-relaxed">Au cœur du campus, l'église universitaire accueille chaque semaine étudiants, enseignants et personnel pour le culte, l'étude biblique et le service communautaire. C'est un lieu de ressourcement spirituel essentiel à la formation intégrale prônée par l'UNILUK.</p>
+
+      <div class="grid sm:grid-cols-2 gap-4 mt-8">
+        <template x-for="h in [
+          {j:'Vendredi',t:'Réunion de prière — 18h00'},
+          {j:'Sabbat matin',t:'École du Sabbat — 08h00'},
+          {j:'Sabbat',t:'Culte principal — 09h30'},
+          {j:'Sabbat après-midi',t:'AJ / activités jeunesse — 15h00'}]" :key="h.t">
+          <div class="bg-sky-50 rounded-xl p-4 border border-sky-100">
+            <p class="text-sky-600 font-display font-bold text-xs uppercase tracking-wide" x-text="h.j"></p>
+            <p class="text-sm font-semibold mt-1" x-text="h.t"></p>
+          </div>
+        </template>
+      </div>
+    </div>
+    <div class="rounded-3xl overflow-hidden shadow-card">
+      <img src="https://images.unsplash.com/photo-1438032005730-c779502df39b?w=900&q=80" class="w-full h-[460px] object-cover">
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PAGE : POLYCLINIQUE                                           -->
+<!-- ============================================================ -->
+<section x-show="page==='polyclinique'" x-transition:enter="transition ease-out duration-500" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" class="pt-32 pb-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-14 items-center mb-16">
+      <div>
+        <p class="tri-rule text-sky-600 font-display font-bold text-xs tracking-[.2em] uppercase mb-4"><i class="bg-sky-500"></i>Santé</p>
+        <h1 class="font-display font-extrabold text-3xl sm:text-4xl">Polyclinique de l'UNILUK</h1>
+        <p class="text-ink/60 mt-5 leading-relaxed">Un établissement de soins moderne au service de la communauté universitaire et de la population de Lukanga, encadré par les enseignants et étudiants de la faculté des sciences infirmières.</p>
+        <div class="flex items-center gap-4 mt-6 text-sm">
+          <span class="flex items-center gap-2 text-ink/60"><i class="fa-solid fa-clock text-sky-500"></i>Ouvert 24h/24, 7j/7</span>
+          <span class="flex items-center gap-2 text-ink/60"><i class="fa-solid fa-phone text-sky-500"></i>+243 990 000 000</span>
+        </div>
+      </div>
+      <div class="rounded-3xl overflow-hidden shadow-card">
+        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=900&q=80" class="w-full h-[420px] object-cover">
+      </div>
+    </div>
+
+    <h2 class="font-display font-extrabold text-2xl mb-8">Nos services</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <template x-for="s in clinicServices" :key="s.t">
+        <div class="bg-white rounded-2xl border border-sky-100 shadow-soft p-6">
+          <div class="w-12 h-12 rounded-xl bg-sky-50 text-sky-600 flex items-center justify-center text-lg mb-4"><i :class="'fa-solid '+s.i"></i></div>
+          <p class="font-display font-bold" x-text="s.t"></p>
+          <p class="text-ink/50 text-sm mt-2" x-text="s.d"></p>
+        </div>
+      </template>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PAGE : GALERIE                                                -->
+<!-- ============================================================ -->
+<section x-show="page==='galerie'" x-transition:enter="transition ease-out duration-500" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" class="pt-32 pb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <p class="tri-rule text-sky-600 font-display font-bold text-xs tracking-[.2em] uppercase mb-4"><i class="bg-sky-500"></i>En images</p>
+  <h1 class="font-display font-extrabold text-3xl sm:text-4xl">Galerie photos</h1>
+
+  <div class="columns-2 sm:columns-3 lg:columns-4 gap-4 mt-12 [column-fill:_balance]">
+    <template x-for="(g,i) in gallery" :key="g.id || i">
+      <button @click="lightbox=(g.image_display || g)" class="mb-4 block w-full rounded-2xl overflow-hidden break-inside-avoid group relative">
+        <img :src="g.image_display || g" :alt="g.alt || 'Photo de la galerie UNILUK'" class="w-full group-hover:scale-105 transition-transform duration-500">
+        <span class="absolute inset-0 bg-ink/0 group-hover:bg-ink/20 transition-colors flex items-center justify-center">
+          <i class="fa-solid fa-magnifying-glass-plus text-white opacity-0 group-hover:opacity-100 transition-opacity"></i>
+        </span>
+      </button>
+    </template>
+  </div>
+  <div x-show="galleryPages > 1" class="flex justify-center gap-2 mt-10">
+    <button @click="loadGallery(galleryPage-1)" :disabled="galleryPage===1" class="px-4 py-2 rounded-lg border border-sky-200 disabled:opacity-40">Précédent</button>
+    <template x-for="p in galleryPages" :key="p"><button @click="loadGallery(p)" :class="p===galleryPage ? 'bg-sky-600 text-white' : 'bg-white'" class="w-10 h-10 rounded-lg border border-sky-200" x-text="p"></button></template>
+    <button @click="loadGallery(galleryPage+1)" :disabled="galleryPage===galleryPages" class="px-4 py-2 rounded-lg border border-sky-200 disabled:opacity-40">Suivant</button>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PAGE : INSCRIPTION (complète)                                 -->
+<!-- ============================================================ -->
+<section x-show="page==='inscription'" x-transition:enter="transition ease-out duration-500" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" class="pt-32 pb-24">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <p class="tri-rule text-sky-600 font-display font-bold text-xs tracking-[.2em] uppercase mb-4"><i class="bg-sky-500"></i>Admissions 2026–2027</p>
+    <h1 class="font-display font-extrabold text-3xl sm:text-4xl">Formulaire d'inscription</h1>
+    <p class="text-ink/55 mt-3">Merci de compléter soigneusement chaque champ. Notre service des admissions vous contactera sous 72h.</p>
+
+    <template x-if="!reg.submitted">
+      <form @submit.prevent="submitRegistration(false)" class="bg-white rounded-3xl shadow-card border border-sky-100 p-6 sm:p-10 mt-10 space-y-5">
+        <div class="grid sm:grid-cols-3 gap-4">
+          <div>
+            <label class="text-xs font-display font-bold text-ink/60 mb-1.5 block">Nom *</label>
+            <input x-model="reg.nom" required class="w-full border border-sky-100 rounded-xl px-4 py-3 text-sm bg-sky-50/50">
+          </div>
+          <div>
+            <label class="text-xs font-display font-bold text-ink/60 mb-1.5 block">Postnom *</label>
+            <input x-model="reg.postnom" required class="w-full border border-sky-100 rounded-xl px-4 py-3 text-sm bg-sky-50/50">
+          </div>
+          <div>
+            <label class="text-xs font-display font-bold text-ink/60 mb-1.5 block">Prénom *</label>
+            <input x-model="reg.prenom" required class="w-full border border-sky-100 rounded-xl px-4 py-3 text-sm bg-sky-50/50">
+          </div>
+        </div>
+
+        <div>
+          <label class="text-xs font-display font-bold text-ink/60 mb-1.5 block">Faculté souhaitée *</label>
+          <select x-model="reg.faculte" required class="w-full border border-sky-100 rounded-xl px-4 py-3 text-sm bg-sky-50/50">
+            <option value="" disabled selected>Choisir une faculté</option>
+            <template x-for="f in faculties" :key="f.id"><option :value="f.id" x-text="f.name"></option></template>
+          </select>
+        </div>
+
+        <div>
+          <label class="text-xs font-display font-bold text-ink/60 mb-1.5 block">Diplôme (image ou PDF) *</label>
+          <label class="flex flex-col items-center justify-center border-2 border-dashed border-sky-200 rounded-xl py-8 cursor-pointer hover:bg-sky-50/60 transition-colors">
+            <i class="fa-solid fa-cloud-arrow-up text-sky-500 text-2xl mb-2"></i>
+            <span class="text-sm text-ink/60 font-medium" x-text="reg.fileName || 'Cliquez pour joindre votre diplôme (.jpg, .png, .pdf)'"></span>
+            <input x-ref="registrationDocument" type="file" accept=".pdf,image/*" required class="hidden" @change="reg.fileName = $event.target.files[0]?.name">
+          </label>
+        </div>
+
+        <div>
+          <label class="text-xs font-display font-bold text-ink/60 mb-1.5 block">Mot de motivation *</label>
+          <textarea x-model="reg.motivation" required rows="4" placeholder="Expliquez brièvement pourquoi vous souhaitez étudier à l'UNILUK..." class="w-full border border-sky-100 rounded-xl px-4 py-3 text-sm bg-sky-50/50"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-sky-600 hover:bg-sky-700 text-white font-display font-bold py-4 rounded-xl transition-colors flex items-center justify-center gap-2">
+          Envoyer ma demande d'inscription <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </template>
+
+    <template x-if="reg.submitted">
+      <div class="bg-white rounded-3xl shadow-card border border-sky-100 p-10 mt-10 text-center">
+        <div class="w-16 h-16 rounded-full bg-emerald-50 text-emerald-500 flex items-center justify-center text-3xl mx-auto"><i class="fa-solid fa-circle-check"></i></div>
+        <h3 class="font-display font-extrabold text-xl mt-5">Demande envoyée avec succès !</h3>
+        <p class="text-ink/55 text-sm mt-2 max-w-sm mx-auto">Merci <span x-text="reg.prenom"></span>, votre dossier pour la <span class="font-semibold" x-text="faculties.find(f=>String(f.id)===String(reg.faculte))?.name"></span> a bien été reçu. Notre équipe vous contactera très prochainement.</p>
+        <button @click="goTo('home')" class="mt-6 text-sky-600 font-display font-bold text-sm">Retour à l'accueil</button>
+      </div>
+    </template>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================ -->
+<!-- FOOTER                                                        -->
+<!-- ============================================================ -->
+<footer x-cloak x-show="!loading" class="bg-ink text-sky-100/80 pt-16 pb-8 mt-0">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <div class="flex items-center gap-2.5">
+        <span class="tri-mark text-2xl"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="42" fill="none" stroke="#1591E6" stroke-width="9" stroke-linecap="round" stroke-dasharray="70 200"/><circle cx="50" cy="50" r="42" fill="none" stroke="#E89A24" stroke-width="9" stroke-linecap="round" stroke-dasharray="70 200" stroke-dashoffset="-90"/><circle cx="50" cy="50" r="42" fill="none" stroke="#7EC9FB" stroke-width="9" stroke-linecap="round" stroke-dasharray="70 200" stroke-dashoffset="-180"/></svg></span>
+        <span class="font-display font-extrabold text-white text-lg" x-text="site.name"></span>
+      </div>
+      <p class="text-sm mt-4 leading-relaxed">Université Adventiste de Lukanga — ISTA — ISTM. Former des bâtisseurs, corps et esprit, au service du Congo et du monde.</p>
+      <div class="flex gap-3 mt-5">
+        <template x-for="social in [{icon:'facebook-f',url:site.facebook_url,label:'Facebook'},{icon:'youtube',url:site.youtube_url,label:'YouTube'},{icon:'instagram',url:site.instagram_url,label:'Instagram'},{icon:'x-twitter',url:site.x_url,label:'X'}]" :key="social.icon">
+          <a x-show="social.url" :href="social.url" :aria-label="social.label" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/10 hover:bg-sky-500 flex items-center justify-center transition-colors"><i :class="'fa-brands fa-'+social.icon" class="text-sm"></i></a>
+        </template>
+      </div>
+    </div>
+
+    <div>
+      <p class="font-display font-bold text-white mb-4">Navigation</p>
+      <ul class="space-y-2.5 text-sm">
+        <li><button @click="goTo('home')" class="hover:text-sky-300">Accueil</button></li>
+        <li><button @click="goTo('institutions')" class="hover:text-sky-300">Institutions</button></li>
+        <li><button @click="goTo('horaires')" class="hover:text-sky-300">Horaires des cours</button></li>
+        <li><button @click="goTo('communiques')" class="hover:text-sky-300">Communiqués</button></li>
+        <li><button @click="goTo('inscription')" class="hover:text-sky-300">S'inscrire</button></li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="font-display font-bold text-white mb-4">Vie du campus</p>
+      <ul class="space-y-2.5 text-sm">
+        <li><button @click="goTo('groupes')" class="hover:text-sky-300">Groupes estudiantins</button></li>
+        <li><button @click="goTo('campus')" class="hover:text-sky-300">Campus & bâtiments</button></li>
+        <li><button @click="goTo('eglise')" class="hover:text-sky-300">Église Adventiste</button></li>
+        <li><button @click="goTo('polyclinique')" class="hover:text-sky-300">Polyclinique</button></li>
+        <li><button @click="goTo('galerie')" class="hover:text-sky-300">Galerie photos</button></li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="font-display font-bold text-white mb-4">Contact</p>
+      <ul class="space-y-3 text-sm">
+        <li class="flex gap-3"><i class="fa-solid fa-location-dot text-sky-400 mt-1"></i>Route de Lukanga, Kamina, RDC</li>
+        <li class="flex gap-3"><i class="fa-solid fa-envelope text-sky-400 mt-1"></i>info@uniluk.ac.cd</li>
+        <li class="flex gap-3"><i class="fa-solid fa-phone text-sky-400 mt-1"></i>+243 970 000 000</li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-white/10 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 text-center lg:text-left text-xs text-sky-200/50">
+    <p>© <span x-text="new Date().getFullYear()"></span> Université Adventiste de Lukanga (UNILUK). Tous droits réservés.</p>
+    <div class="flex flex-col gap-1 lg:items-end lg:text-right">
+      <p>Conçu avec soin pour la communauté UNILUK · ISTA · ISTM</p>
+      <p class="text-sky-100/70">Fait par la Promotion L4 Sciences Informatiques 2026 <span class="hidden sm:inline">· </span><span class="block sm:inline">Projet dirigé par Exaucé Vagheni et Volonté Mukovi</span></p>
+    </div>
+  </div>
+</footer>
+
+<!-- Menu mobile : placé hors du header afin d'éviter les contextes de z-index. -->
+<div x-show="mobileMenu" x-cloak class="fixed inset-0 z-[110] lg:hidden" role="dialog" aria-modal="true" aria-label="Menu de navigation">
+  <div @click="mobileMenu=false" x-transition.opacity class="absolute inset-0 bg-ink/60 backdrop-blur-sm"></div>
+  <div x-transition:enter="transition ease-out duration-300" x-transition:enter-start="translate-x-full" x-transition:enter-end="translate-x-0"
+       x-transition:leave="transition ease-in duration-200" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full"
+       class="absolute right-0 top-0 h-full w-[82%] max-w-sm bg-white shadow-2xl flex flex-col">
+    <div class="flex items-center justify-between px-5 h-16 border-b border-sky-100 shrink-0">
+      <span class="font-display font-extrabold text-ink">Menu</span>
+      <button @click="mobileMenu=false" class="text-xl text-ink/60" aria-label="Fermer le menu"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="flex-1 overflow-y-auto py-3 px-3 font-display font-semibold text-ink/85">
+      <template x-for="it in [
+        {p:'home',a:null,l:'Accueil',i:'fa-house'},
+        {p:'home',a:'facultes',l:'Facultés',i:'fa-graduation-cap'},
+        {p:'home',a:'actus',l:'Actualités',i:'fa-newspaper'},
+        {p:'horaires',a:null,l:'Horaires des cours',i:'fa-calendar-days'},
+        {p:'communiques',a:null,l:'Communiqués',i:'fa-bullhorn'},
+        {p:'institutions',a:null,l:'Institutions',i:'fa-landmark'},
+        {p:'groupes',a:null,l:'Groupes estudiantins',i:'fa-people-group'},
+        {p:'campus',a:null,l:'Campus & bâtiments',i:'fa-building-columns'},
+        {p:'eglise',a:null,l:'Église Adventiste',i:'fa-church'},
+        {p:'polyclinique',a:null,l:'Polyclinique',i:'fa-staff-snake'},
+        {p:'galerie',a:null,l:'Galerie photos',i:'fa-images'}]" :key="it.l">
+        <button @click="goTo(it.p, it.a); mobileMenu=false" class="w-full flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-sky-50 text-left" :class="page===it.p && !it.a && 'bg-sky-50 text-sky-600 font-bold'">
+          <i :class="'fa-solid '+it.i" class="text-sky-500 w-5"></i><span x-text="it.l"></span>
+        </button>
+      </template>
+    </div>
+    <div class="p-4 border-t border-sky-100 shrink-0">
+      <button @click="goTo('inscription'); mobileMenu=false" class="w-full bg-sun-500 hover:bg-sun-600 text-ink font-display font-bold py-3 rounded-full">S'inscrire maintenant</button>
+    </div>
+  </div>
+</div>
+
+<!-- back to top -->
+<button x-cloak x-show="!loading && scrolled" @click="window.scrollTo({top:0,behavior:'smooth'})" x-transition class="fixed bottom-6 right-6 z-40 w-11 h-11 rounded-full bg-sky-600 hover:bg-sky-700 text-white shadow-card flex items-center justify-center"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- ============================================================ -->
+<!-- MODAL : FACULTE                                               -->
+<!-- ============================================================ -->
+<div x-show="modal==='faculty'" x-cloak class="fixed inset-0 z-[70] flex items-end sm:items-center justify-center p-0 sm:p-6">
+  <div @click="modal=null" x-show="modal==='faculty'" x-transition.opacity class="absolute inset-0 bg-ink/70 backdrop-blur-sm"></div>
+  <div x-show="modal==='faculty'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-8" x-transition:enter-end="opacity-100 translate-y-0"
+       class="relative bg-white w-full sm:max-w-2xl max-h-[92vh] overflow-y-auto rounded-t-3xl sm:rounded-3xl shadow-card">
+    <template x-if="selectedFaculty">
+      <div>
+        <div class="h-56 sm:h-64 relative">
+          <img :src="selectedFaculty.img" class="w-full h-full object-cover">
+          <button @click="modal=null" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 flex items-center justify-center"><i class="fa-solid fa-xmark"></i></button>
+          <span class="absolute bottom-4 left-4 badge bg-sky-600 text-white text-[11px] px-3 py-1 rounded-full" x-text="selectedFaculty.code"></span>
+        </div>
+        <div class="p-6 sm:p-8">
+          <h3 class="font-display font-extrabold text-xl sm:text-2xl" x-text="selectedFaculty.name"></h3>
+          <p class="text-ink/65 mt-4 leading-relaxed" x-text="selectedFaculty.full"></p>
+          <div class="grid sm:grid-cols-2 gap-3 mt-6">
+            <template x-for="opt in selectedFaculty.options" :key="opt">
+              <div class="flex items-center gap-2 text-sm text-ink/70"><i class="fa-solid fa-circle-check text-sky-500"></i><span x-text="opt"></span></div>
+            </template>
+          </div>
+          <div class="flex flex-wrap gap-3 mt-8">
+            <button @click="reg.faculte=selectedFaculty.id; modal=null; goTo('inscription')" class="bg-sky-600 hover:bg-sky-700 text-white font-display font-bold px-6 py-3 rounded-full">S'inscrire à cette faculté</button>
+            <button @click="modal=null" class="border border-sky-200 text-ink/70 font-display font-semibold px-6 py-3 rounded-full">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </template>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- MODAL : HORAIRE PDF (compatible iOS)                          -->
+<!-- ============================================================ -->
+<div x-show="modal==='schedule'" x-cloak class="fixed inset-0 z-[70] flex items-end sm:items-center justify-center p-0 sm:p-6">
+  <div @click="modal=null" x-show="modal==='schedule'" x-transition.opacity class="absolute inset-0 bg-ink/70 backdrop-blur-sm"></div>
+  <div x-show="modal==='schedule'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-8" x-transition:enter-end="opacity-100 translate-y-0"
+       class="relative bg-white w-full sm:max-w-3xl h-[92vh] sm:h-[85vh] rounded-t-3xl sm:rounded-3xl shadow-card flex flex-col overflow-hidden">
+    <template x-if="selectedSchedule">
+      <div class="flex flex-col h-full">
+        <div class="flex items-center justify-between px-5 sm:px-7 h-16 border-b border-sky-100 shrink-0">
+          <div>
+            <p class="font-display font-bold text-sm leading-tight" x-text="selectedSchedule.name"></p>
+            <p class="text-ink/40 text-xs">Horaire des cours</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <a :href="selectedSchedule.pdf" target="_blank" rel="noopener" class="text-xs font-display font-bold text-sky-600 border border-sky-200 hover:bg-sky-50 px-3 py-2 rounded-full flex items-center gap-1.5"><i class="fa-solid fa-up-right-from-square"></i><span class="hidden sm:inline">Ouvrir</span></a>
+            <a :href="selectedSchedule.pdf" download class="text-xs font-display font-bold text-white bg-sky-600 hover:bg-sky-700 px-3 py-2 rounded-full flex items-center gap-1.5"><i class="fa-solid fa-download"></i><span class="hidden sm:inline">Télécharger</span></a>
+            <button @click="modal=null" class="w-8 h-8 rounded-full bg-sky-50 flex items-center justify-center ml-1"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+        </div>
+        <!-- iOS/Android : Google Docs viewer en iframe => rendu fiable partout, avec repli "ouvrir/telecharger" toujours visible ci-dessus -->
+        <div class="flex-1 bg-sky-50 relative">
+          <iframe :src="'https://docs.google.com/gview?embedded=true&url='+encodeURIComponent(selectedSchedule.pdf)" class="w-full h-full" frameborder="0" title="Horaire PDF"></iframe>
+        </div>
+        <p class="text-center text-[11px] text-ink/35 py-2 sm:hidden">Si l'aperçu ne s'affiche pas, utilisez « Ouvrir » ci-dessus.</p>
+      </div>
+    </template>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- MODAL : INSTITUTION                                           -->
+<!-- ============================================================ -->
+<div x-show="modal==='institution'" x-cloak class="fixed inset-0 z-[70] flex items-end sm:items-center justify-center p-0 sm:p-6">
+  <div @click="modal=null" x-show="modal==='institution'" x-transition.opacity class="absolute inset-0 bg-ink/70 backdrop-blur-sm"></div>
+  <div x-show="modal==='institution'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-8" x-transition:enter-end="opacity-100 translate-y-0"
+       class="relative bg-white w-full sm:max-w-2xl max-h-[92vh] overflow-y-auto rounded-t-3xl sm:rounded-3xl shadow-card">
+    <template x-if="selectedInstitution">
+      <div>
+        <div class="h-56 sm:h-64 relative">
+          <img :src="selectedInstitution.img" class="w-full h-full object-cover">
+          <button @click="modal=null" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 flex items-center justify-center"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="p-6 sm:p-8">
+          <span class="badge text-[11px] px-3 py-1 rounded-full text-white" :class="selectedInstitution.color" x-text="selectedInstitution.acronym"></span>
+          <h3 class="font-display font-extrabold text-xl sm:text-2xl mt-3" x-text="selectedInstitution.name"></h3>
+          <p class="text-ink/65 mt-4 leading-relaxed" x-text="selectedInstitution.full"></p>
+          <div class="flex flex-wrap gap-3 mt-8">
+            <button @click="modal=null; goTo('inscription')" class="bg-sky-600 hover:bg-sky-700 text-white font-display font-bold px-6 py-3 rounded-full">Postuler ici</button>
+            <button @click="modal=null" class="border border-sky-200 text-ink/70 font-display font-semibold px-6 py-3 rounded-full">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </template>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- MODAL : GROUPE ESTUDIANTIN                                    -->
+<!-- ============================================================ -->
+<div x-show="modal==='group'" x-cloak class="fixed inset-0 z-[70] flex items-end sm:items-center justify-center p-0 sm:p-6">
+  <div @click="modal=null" x-show="modal==='group'" x-transition.opacity class="absolute inset-0 bg-ink/70 backdrop-blur-sm"></div>
+  <div x-show="modal==='group'" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-8" x-transition:enter-end="opacity-100 translate-y-0"
+       class="relative bg-white w-full sm:max-w-xl max-h-[92vh] overflow-y-auto rounded-t-3xl sm:rounded-3xl shadow-card">
+    <template x-if="selectedGroup">
+      <div class="p-6 sm:p-8">
+        <div class="flex items-start justify-between">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl text-white flex items-center justify-center text-lg" :class="selectedGroup.color"><i :class="'fa-solid '+selectedGroup.icon"></i></div>
+            <div>
+              <h3 class="font-display font-extrabold text-lg" x-text="selectedGroup.acronym"></h3>
+              <p class="text-ink/50 text-xs" x-text="selectedGroup.name"></p>
+            </div>
+          </div>
+          <button @click="modal=null" class="w-9 h-9 rounded-full bg-sky-50 flex items-center justify-center shrink-0"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <p class="text-ink/65 mt-5 leading-relaxed" x-text="selectedGroup.full"></p>
+
+        <p class="font-display font-bold text-sm mt-6 mb-3">Réalisations</p>
+        <ul class="space-y-2.5">
+          <template x-for="r in selectedGroup.achievements" :key="r">
+            <li class="flex gap-2.5 text-sm text-ink/65"><i class="fa-solid fa-trophy text-sun-500 mt-0.5"></i><span x-text="r"></span></li>
+          </template>
+        </ul>
+
+        <div class="flex flex-wrap items-center gap-4 mt-7 pt-6 border-t border-sky-100">
+          <a x-show="selectedGroup.site" :href="selectedGroup.site" target="_blank" class="text-sky-600 font-display font-bold text-sm flex items-center gap-2"><i class="fa-solid fa-globe"></i>Visiter leur site</a>
+          <span class="text-ink/50 text-sm flex items-center gap-2"><i class="fa-solid fa-envelope text-sky-400"></i><span x-text="selectedGroup.contact"></span></span>
+        </div>
+      </div>
+    </template>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- LIGHTBOX GALERIE                                              -->
+<!-- ============================================================ -->
+<div x-show="lightbox" x-cloak class="fixed inset-0 z-[80] flex items-center justify-center p-4 sm:p-10" @click="lightbox=null">
+  <div x-show="lightbox" x-transition.opacity class="absolute inset-0 bg-ink/90"></div>
+  <img x-show="lightbox" x-transition :src="lightbox" class="relative max-w-full max-h-full rounded-xl shadow-2xl">
+  <button @click="lightbox=null" class="absolute top-5 right-5 sm:top-8 sm:right-8 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center text-xl"><i class="fa-solid fa-xmark"></i></button>
+</div>
+
+<!-- ============================================================ -->
+<!-- TOAST                                                         -->
+<!-- ============================================================ -->
+<div x-show="toast" x-cloak x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0"
+     class="fixed bottom-6 left-1/2 -translate-x-1/2 z-[90] bg-ink text-white text-sm font-display font-semibold px-5 py-3 rounded-full shadow-card flex items-center gap-2">
+  <i class="fa-solid fa-circle-check text-emerald-400"></i><span x-text="toast"></span>
+</div>
+
+<!-- ============================================================ -->
+<!-- SCRIPTS                                                       -->
+<!-- ============================================================ -->
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+<script>
+const PDF_SAMPLE = "https://www.orimi.com/pdf-test.pdf";
+
+function uniluk(){
+  return {
+    // ---------- état global ----------
+    loading:true,
+    loadMsg:"Préparation de votre expérience…",
+    page:"home",
+    scrolled:false,
+    mobileMenu:false,
+    vieOpen:false,
+    modal:null,
+    lightbox:null,
+    toast:null,
+    tIndex:0,
+    site:{name:'UNILUK', full_name:'Université Adventiste de Lukanga', footer_text:'Université Adventiste de Lukanga', address:'Route de Lukanga, Kamina, RDC', email:'info@uniluk.ac.cd', phone:'+243 970 000 000'},
+    about:{
+      image:'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=900&q=80',
+      highlight_value:'30+',
+      highlight_label:'années au service de la formation à Lukanga',
+      subtitle:"À propos de l'UNILUK",
+      title:"Une communauté d'apprentissage fondée sur l'excellence et le caractère",
+      content:"Née de la vision de l'Église Adventiste du Septième Jour, l'UNILUK forme des cadres compétents dans les domaines de la théologie, de la gestion, de la santé, de l'éducation et des techniques appliquées. Notre pédagogie associe rigueur scientifique, encadrement personnalisé et développement du caractère."
+    },
+    galleryPage:1,
+    galleryPages:1,
+
+    // ---------- carrousel hero (optimisé SEO & haute visibilité) ----------
+    heroIndex:0,
+    heroTimer:null,
+    heroSlides:[
+      {
+        img:"https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=85&auto=format&fit=crop",
+        tag:"Excellence académique · Foi · Service",
+        title:"Campus de l'Université Adventiste de Lukanga (UNILUK)",
+        alt:"Vue principale du campus vert de l'Université Adventiste de Lukanga UNILUK RDC",
+        caption:"Formation universitaire d'excellence au cœur de Lukanga"
+      },
+      {
+        img:"https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1600&q=85&auto=format&fit=crop",
+        tag:"Formation Intégrale · Encadrement de proximité",
+        title:"Vie étudiante et enseignement supérieur à Lukanga",
+        alt:"Étudiants diplômés et enseignants de l'UNILUK Lukanga réunis sur le campus",
+        caption:"Une communauté estudiantine dynamique et engagée"
+      },
+      {
+        img:"https://images.unsplash.com/photo-1562774053-701939374585?w=1600&q=85&auto=format&fit=crop",
+        tag:"Trois Institutions · Un Campus d'Avenir",
+        title:"Infrastructures et amphis de l'UNILUK, ISTA et ISTM Lukanga",
+        alt:"Infrastructures modernes et salles de cours équipées de l'UNILUK et ISTA Lukanga",
+        caption:"Infrastructures pédagogiques et scientifiques modernes"
+      },
+      {
+        img:"https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1600&q=85&auto=format&fit=crop",
+        tag:"UNILUK · ISTA · ISTM Lukanga",
+        title:"Recherche scientifique et leadership à l'UNILUK Lukanga",
+        alt:"Séminaire et vie académique des étudiants à l'Université Adventiste de Lukanga",
+        caption:"Former des bâtisseurs intègres et compétents"
+      }
+    ],
+
+    // ---------- data ----------
+    stats:[
+      {icon:"fa-user-graduate", value:4200, display:0, suffix:"+", label:"Étudiants inscrits"},
+      {icon:"fa-building-columns", value:9, display:0, suffix:"", label:"Facultés & instituts"},
+      {icon:"fa-chalkboard-user", value:180, display:0, suffix:"+", label:"Enseignants"},
+      {icon:"fa-people-line", value:6500, display:0, suffix:"+", label:"Alumni"},
+      {icon:"fa-file-lines", value:340, display:0, suffix:"+", label:"Travaux publiés"}
+    ],
+
+    faculties:[
+      {id:1, code:"THEO", name:"Faculté de Théologie", img:"https://images.unsplash.com/photo-1507692049790-de58290a4334?w=700&q=80",
+       short:"Formation pastorale et biblique, au service de l'Église et de la société.",
+       full:"La Faculté de Théologie prépare des pasteurs, aumôniers et enseignants de religion enracinés dans les Écritures et engagés dans le service communautaire, avec un solide encadrement pratique en paroisse.",
+       options:["Licence en Théologie pastorale", "Licence en Sciences religieuses", "Stage pastoral encadré", "Séminaires bibliques"]},
+      {id:2, code:"SEG", name:"Faculté des Sciences Économiques et de Gestion", img:"https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=700&q=80",
+       short:"Économie, gestion des entreprises, comptabilité et finance appliquée.",
+       full:"La Faculté SEG forme des gestionnaires, économistes et comptables capables d'accompagner le développement des entreprises et institutions publiques congolaises, avec un fort accent sur les cas pratiques et les stages.",
+       options:["Gestion financière", "Comptabilité & Audit", "Économie du développement", "Entrepreneuriat"]},
+      {id:3, code:"SIP", name:"Faculté des Sciences Infirmières & Santé Publique", img:"https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=700&q=80",
+       short:"Soins infirmiers, santé communautaire et santé publique.",
+       full:"Cette faculté forme des professionnels de santé compétents et empathiques, en lien direct avec la Polyclinique de l'UNILUK pour une pratique clinique encadrée dès les premières années.",
+       options:["Sciences infirmières générales", "Santé publique", "Nutrition & diététique", "Stages cliniques encadrés"]},
+      {id:4, code:"PED", name:"Faculté de Pédagogie Appliquée", img:"https://images.unsplash.com/photo-1509062522246-3755977927d7?w=700&q=80",
+       short:"Sciences de l'éducation et formation des futurs enseignants.",
+       full:"La Faculté de Pédagogie forme des enseignants et cadres éducatifs maîtrisant à la fois les disciplines scientifiques et les méthodes pédagogiques modernes, avec des stages pratiques en écoles partenaires.",
+       options:["Pédagogie appliquée", "Psychologie de l'éducation", "Didactique des sciences", "Stage en école partenaire"]},
+      {id:5, code:"ISTA", name:"Institut Supérieur des Techniques Appliquées (ISTA)", img:"https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?w=700&q=80",
+       short:"Informatique, électromécanique et techniques appliquées.",
+       full:"L'ISTA Lukanga forme des techniciens et ingénieurs de pratique en informatique, électromécanique et technologies appliquées, avec des laboratoires équipés et des projets réels en partenariat avec des entreprises locales.",
+       options:["Informatique de gestion", "Réseaux & télécommunications", "Électromécanique", "Projets d'entreprise"]},
+      {id:6, code:"ISTM", name:"Institut Supérieur des Techniques Médicales (ISTM)", img:"https://images.unsplash.com/photo-1516549655169-df83a0774514?w=700&q=80",
+       short:"Techniques de laboratoire, imagerie médicale et kinésithérapie.",
+       full:"L'ISTM Lukanga forme des techniciens médicaux hautement qualifiés dans les filières paramédicales, en lien étroit avec la pratique hospitalière régionale.",
+       options:["Techniques de laboratoire", "Imagerie médicale", "Kinésithérapie", "Anesthésie-réanimation"]}
+    ],
+
+    articles:[
+      {id:1, cat:"Vie académique", catColor:"bg-sky-600", date:"12 août 2026", img:"https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=700&q=80",
+       title:"Ouverture officielle de l'année académique 2026–2027",
+       short:"Le recteur a présidé la cérémonie de rentrée devant plus de 1200 nouveaux étudiants.",
+       full:"L'Université Adventiste de Lukanga a procédé à l'ouverture solennelle de son année académique 2026-2027 en présence des autorités provinciales, des enseignants et de plus de 1200 nouveaux étudiants venus de toute la région du Haut-Lomami.\n\nDans son discours, le recteur a insisté sur l'importance de l'excellence académique conjuguée à l'intégrité morale, valeurs fondatrices de l'institution depuis sa création. La cérémonie s'est clôturée par un culte d'action de grâce à l'église universitaire."},
+      {id:2, cat:"Recherche", catColor:"bg-emerald-600", date:"02 août 2026", img:"https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=700&q=80",
+       title:"Colloque scientifique sur la santé communautaire à Lukanga",
+       short:"Chercheurs et étudiants de l'ISTM ont présenté leurs travaux devant un jury international.",
+       full:"La Faculté des Sciences Infirmières et Santé Publique, en collaboration avec l'ISTM, a organisé un colloque scientifique réunissant plus de 40 chercheurs autour des enjeux de santé communautaire en milieu rural congolais.\n\nPlusieurs travaux d'étudiants ont été primés, ouvrant la voie à des publications dans des revues scientifiques partenaires."},
+      {id:3, cat:"Partenariat", catColor:"bg-sun-500", date:"27 juillet 2026", img:"https://images.unsplash.com/photo-1521791136064-7986c2920216?w=700&q=80",
+       title:"Nouveau partenariat entre l'ISTA et des entreprises du secteur minier",
+       short:"Un accord de stage et d'employabilité signé pour les étudiants en électromécanique.",
+       full:"L'ISTA Lukanga a signé une convention de partenariat avec plusieurs entreprises du secteur minier du Haut-Lomami, garantissant des places de stage et des opportunités d'embauche pour les finalistes en électromécanique et en informatique industrielle."},
+      {id:4, cat:"Sport", catColor:"bg-rose-500", date:"15 juillet 2026", img:"https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=700&q=80",
+       title:"L'équipe de football UNILUK remporte le tournoi inter-universitaire",
+       short:"Une victoire éclatante sur le terrain du campus devant des centaines de supporters.",
+       full:"L'équipe masculine de football de l'UNILUK a remporté le tournoi inter-universitaire du Haut-Lomami, disputé sur le terrain du campus. Une performance saluée par la direction qui encourage vivement le sport comme pilier de la formation intégrale."},
+      {id:5, cat:"Culture", catColor:"bg-violet-500", date:"03 juillet 2026", img:"https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=700&q=80",
+       title:"Semaine culturelle : musique, art et traditions à l'honneur",
+       short:"Les étudiants des différentes facultés ont animé une semaine riche en activités culturelles.",
+       full:"La traditionnelle semaine culturelle de l'UNILUK a rassemblé les étudiants autour de concerts de chorale, d'expositions artistiques et de soirées traditionnelles, célébrant la richesse culturelle congolaise au sein du campus."},
+      {id:6, cat:"Communiqué", catColor:"bg-ink", date:"28 juin 2026", img:"https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=700&q=80",
+       title:"Rénovation du Bâtiment D et modernisation des laboratoires",
+       short:"D'importants travaux de modernisation sont en cours sur le campus pour la rentrée.",
+       full:"La direction générale annonce le lancement de travaux de rénovation du Bâtiment D, incluant la modernisation des laboratoires d'informatique et de sciences. Les travaux devraient s'achever avant la rentrée académique 2026-2027."}
+    ],
+
+    comments:{
+      1:[
+        {id:1, name:"Grace Mwamba", role:"Étudiante en SEG", text:"Une cérémonie magnifique, j'étais fière de porter les couleurs de l'UNILUK !", time:"il y a 2 j"},
+        {id:2, name:"Pasteur Ilunga", role:"Parent", text:"Merci à toute l'équipe pour l'organisation impeccable.", time:"il y a 1 j"}
+      ],
+      3:[{id:1, name:"David Kalonji", role:"Étudiant ISTA", text:"Excellente nouvelle pour notre avenir professionnel !", time:"il y a 3 j"}]
+    },
+    newComment:{name:"", role:"", text:""},
+
+    testimonials:[
+      {quote:"Envoyer mon fils à l'UNILUK a été la meilleure décision. Il en revient chaque week-end plus mûr, discipliné et passionné par ses études.", name:"Mme Kabeya", role:"Parent d'étudiant", avatar:"https://randomuser.me/api/portraits/women/68.jpg"},
+      {quote:"Diplômé de la Faculté SEG en 2018, je dirige aujourd'hui mon propre cabinet comptable. L'UNILUK m'a donné bien plus que des connaissances : une véritable éthique de travail.", name:"Emmanuel Tshibangu", role:"Alumni, promotion 2018", avatar:"https://randomuser.me/api/portraits/men/54.jpg"},
+      {quote:"L'encadrement personnalisé et la vie spirituelle du campus ont façonné qui je suis aujourd'hui, bien au-delà de mon diplôme d'infirmier.", name:"Josué Kanku", role:"Alumni ISTM, promotion 2020", avatar:"https://randomuser.me/api/portraits/men/23.jpg"},
+      {quote:"En tant que parent, je suis rassurée par le sérieux de l'encadrement et la sécurité du campus de Lukanga.", name:"Mme Ntumba", role:"Parent d'étudiante", avatar:"https://randomuser.me/api/portraits/women/32.jpg"}
+    ],
+
+    announcements:[
+      {id:1, tag:"Académique", color:"bg-sky-600", title:"Calendrier des examens du premier semestre 2026-2027", date:"10 août 2026", pdf:PDF_SAMPLE,
+       full:"Le Secrétariat Général Académique porte à la connaissance de tous les étudiants que le calendrier des examens du premier semestre est désormais disponible. Les épreuves débuteront le 15 décembre 2026 et se dérouleront selon l'horaire affiché dans chaque faculté.\n\nTout étudiant en ordre avec le service financier pourra retirer sa carte d'accès aux salles d'examen auprès du secrétariat de sa faculté."},
+      {id:2, tag:"Administratif", color:"bg-ink", title:"Suspension temporaire des cours du vendredi 21 août", date:"18 août 2026", pdf:null,
+       full:"En raison de la retraite spirituelle annuelle du corps professoral, les cours sont suspendus le vendredi 21 août 2026 pour l'ensemble des facultés. La reprise normale des activités académiques est prévue le lundi 24 août 2026."},
+      {id:3, tag:"Finances", color:"bg-sun-500", title:"Rappel : échéance du deuxième versement des frais académiques", date:"05 août 2026", pdf:PDF_SAMPLE,
+       full:"Le Service Financier rappelle à tous les étudiants que la date limite pour le deuxième versement des frais académiques est fixée au 30 août 2026. Passé ce délai, des pénalités de retard seront appliquées conformément au règlement financier de l'université."},
+      {id:4, tag:"Recherche", color:"bg-emerald-600", title:"Appel à candidatures : bourses de recherche 2027", date:"29 juillet 2026", pdf:PDF_SAMPLE,
+       full:"La Direction de la Recherche et des Publications lance un appel à candidatures pour l'attribution de bourses de recherche destinées aux étudiants finalistes. Les dossiers doivent être déposés au bureau de la recherche avant le 15 septembre 2026."},
+      {id:5, tag:"Vie estudiantine", color:"bg-violet-500", title:"Élections des délégués des étudiants — session 2026", date:"20 juillet 2026", pdf:null,
+       full:"Le Décanat des étudiants annonce l'ouverture des candidatures pour les élections des délégués facultaires. Les étudiants intéressés sont invités à déposer leur candidature au bureau du Décanat avant le 1er septembre 2026."}
+    ],
+
+    institutions:[
+      {id:1, acronym:"UNILUK", color:"bg-sky-600", name:"Université Adventiste de Lukanga", img:"https://images.unsplash.com/photo-1592280771190-3e2e4d571952?w=900&q=80",
+       short:"L'institution mère, offrant des formations en théologie, gestion, éducation et santé publique.",
+       full:"L'Université Adventiste de Lukanga est l'institution fondatrice du campus, offrant des formations de licence et de master dans les domaines de la théologie, des sciences économiques et de gestion, de la pédagogie appliquée et de la santé publique. Fondée sur les valeurs adventistes d'excellence et de service, elle forme depuis plus de 30 ans des cadres reconnus dans toute la région."},
+      {id:2, acronym:"ISTA", color:"bg-sun-500", name:"Institut Supérieur des Techniques Appliquées", img:"https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=80",
+       short:"Formations techniques et technologiques : informatique, électromécanique, réseaux.",
+       full:"L'ISTA Lukanga forme des techniciens supérieurs et ingénieurs de pratique dans les domaines de l'informatique, de l'électromécanique et des technologies appliquées. Ses laboratoires modernes et ses partenariats industriels garantissent une formation résolument tournée vers l'employabilité."},
+      {id:3, acronym:"ISTM", color:"bg-emerald-600", name:"Institut Supérieur des Techniques Médicales", img:"https://images.unsplash.com/photo-1551076805-e1869033e561?w=900&q=80",
+       short:"Formations paramédicales : laboratoire, imagerie médicale, kinésithérapie.",
+       full:"L'ISTM Lukanga prépare des techniciens médicaux qualifiés en laboratoire, imagerie médicale, kinésithérapie et anesthésie-réanimation. Adossé à la Polyclinique de l'UNILUK, l'institut garantit un apprentissage clinique concret dès les premiers stages."}
+    ],
+
+    groups:[
+      {id:1, acronym:"GACI", name:"Groupe des Chercheurs et Analystes en Informatique", icon:"fa-laptop-code", color:"bg-sky-600",
+       img:"https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=700&q=80",
+       desc:"Un cercle d'étudiants passionnés de programmation, cybersécurité et intelligence artificielle.",
+       full:"Le GACI rassemble les étudiants de l'ISTA et de l'informatique de gestion autour de projets concrets : développement d'applications, initiation à l'IA et compétitions de programmation. Le groupe organise des formations hebdomadaires ouvertes à tous les étudiants intéressés par le numérique.",
+       achievements:["1er prix au Hackathon régional du Haut-Lomami 2025", "Développement de l'application interne de gestion des notes", "Formation de plus de 150 étudiants en bureautique et code"],
+       site:"#", contact:"gaci@uniluk.ac.cd"},
+      {id:2, acronym:"GREG", name:"Groupe de Recherche en Économie et Gestion", icon:"fa-chart-line", color:"bg-sun-500",
+       img:"https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80",
+       desc:"Un espace d'échange et de recherche pour les étudiants de la Faculté SEG.",
+       full:"Le GREG anime des séminaires, publie des notes d'analyse économique régionale et accompagne les étudiants dans le montage de projets entrepreneuriaux. Il organise chaque année un forum entrepreneurial ouvert aux acteurs économiques de Lukanga.",
+       achievements:["Organisation du Forum Entrepreneurial UNILUK 2025", "Publication de 12 notes d'analyse économique régionale", "Incubation de 6 projets étudiants"],
+       site:"", contact:"greg@uniluk.ac.cd"},
+      {id:3, acronym:"CACIM", name:"Cercle Académique des Cadres en Imagerie Médicale", icon:"fa-heart-pulse", color:"bg-emerald-600",
+       img:"https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=700&q=80",
+       desc:"Le cercle des étudiants de l'ISTM engagés dans la recherche paramédicale.",
+       full:"Le CACIM regroupe les étudiants de l'ISTM autour de journées de sensibilisation sanitaire, de campagnes de dépistage communautaire et d'ateliers pratiques en imagerie médicale, en lien direct avec la Polyclinique de l'UNILUK.",
+       achievements:["Campagne de dépistage gratuit auprès de 800 habitants de Lukanga", "Atelier annuel d'imagerie médicale avancée", "Partenariat avec l'Hôpital Général de Kamina"],
+       site:"", contact:"cacim@uniluk.ac.cd"}
+    ],
+
+    buildings:[
+      {id:1, name:"Bâtiment D", desc:"Salles de cours & laboratoires", img:"https://images.unsplash.com/photo-1562774053-701939374585?w=600&q=80"},
+      {id:2, name:"Bâtiment C", desc:"Amphithéâtres principaux", img:"https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&q=80"},
+      {id:3, name:"Bâtiment E", desc:"Administration & Décanat", img:"https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80"},
+      {id:4, name:"Dortoir Garçons", desc:"Résidence universitaire hommes", img:"https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600&q=80"},
+      {id:5, name:"Dortoir Filles", desc:"Résidence universitaire femmes", img:"https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600&q=80"},
+      {id:6, name:"Guest House", desc:"Hébergement des visiteurs", img:"https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80"},
+      {id:7, name:"Terrain de football", desc:"Complexe sportif principal", img:"https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=600&q=80"},
+      {id:8, name:"Terrain de basketball", desc:"Espace sport & loisirs", img:"https://images.unsplash.com/photo-1546519638-68e109498ffc?w=600&q=80"}
+    ],
+
+    clinicServices:[
+      {i:"fa-stethoscope", t:"Médecine générale", d:"Consultations pour la communauté universitaire et environnante."},
+      {i:"fa-flask", t:"Laboratoire d'analyses", d:"Analyses médicales encadrées par les étudiants de l'ISTM."},
+      {i:"fa-house-chimney-medical", t:"Maternité", d:"Suivi prénatal, accouchement et soins post-natals."},
+      {i:"fa-tooth", t:"Soins dentaires", d:"Consultations et soins dentaires de base."},
+      {i:"fa-truck-medical", t:"Urgences 24h/24", d:"Service d'urgence disponible en permanence."},
+      {i:"fa-pills", t:"Pharmacie", d:"Dispensation de médicaments essentiels sur place."}
+    ],
+
+    gallery:[
+      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80",
+      "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&q=80",
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80",
+      "https://images.unsplash.com/photo-1438032005730-c779502df39b?w=600&q=80",
+      "https://images.unsplash.com/photo-1562774053-701939374585?w=600&q=80",
+      "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=600&q=80",
+      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80",
+      "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80",
+      "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=600&q=80",
+      "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=600&q=80",
+      "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&q=80",
+      "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80"
+    ],
+
+    reg:{nom:"", postnom:"", prenom:"", faculte:"", fileName:"", motivation:"", submitted:false},
+
+    selectedFaculty:null, selectedArticle:null, selectedInstitution:null, selectedGroup:null, selectedAnnouncement:null, selectedSchedule:null,
+
+    // ---------- méthodes ----------
+    init(){
+      const msgs = ["Chargement des facultés…", "Préparation du campus…", "Presque prêt…"];
+      let i=0; const t=setInterval(()=>{ this.loadMsg = msgs[i%msgs.length]; i++; },700);
+      setTimeout(()=>{ this.loading=false; clearInterval(t); }, 2200);
+
+      window.addEventListener("scroll", ()=>{ this.scrolled = window.scrollY > 30; });
+
+      // routage par hash, sans jamais forcer un retour intempestif à l'accueil
+      const applyHash = ()=>{
+        const h = location.hash.replace("#","");
+        if(h) this.page = h;
+      };
+      applyHash();
+      window.addEventListener("hashchange", applyHash);
+
+       this.startHeroTimer();
+       this.loadPlatformData();
+    },
+
+    nextHero(){
+      this.heroIndex = (this.heroIndex + 1) % this.heroSlides.length;
+    },
+    prevHero(){
+      this.heroIndex = (this.heroIndex - 1 + this.heroSlides.length) % this.heroSlides.length;
+    },
+    setHero(idx){
+      this.heroIndex = idx;
+    },
+    startHeroTimer(){
+      this.stopHeroTimer();
+      this.heroTimer = setInterval(()=>{ this.nextHero(); }, 5000);
+    },
+    stopHeroTimer(){
+      if(this.heroTimer){ clearInterval(this.heroTimer); this.heroTimer = null; }
+    },
+
+    goTo(p, anchor){
+      this.page = p;
+      location.hash = p;
+      this.mobileMenu = false;
+      this.$nextTick(()=>{
+        if(anchor){
+          const el = document.getElementById(anchor);
+          if(el) el.scrollIntoView({behavior:"smooth", block:"start"});
+        } else {
+          window.scrollTo({top:0, behavior:"smooth"});
+        }
+      });
+    },
+
+    animateStats(){
+      this.stats.forEach(s=>{
+        let start=0; const dur=1400; const t0=performance.now();
+        const step = (now)=>{
+          const p = Math.min((now-t0)/dur, 1);
+          s.display = Math.floor(p*s.value);
+          if(p<1) requestAnimationFrame(step); else s.display = s.value;
+        };
+        requestAnimationFrame(step);
+      });
+    },
+
+    openFaculty(f){ this.selectedFaculty=f; this.modal="faculty"; },
+    openSchedule(f){ this.selectedSchedule={name:f.name, pdf:PDF_SAMPLE}; this.modal="schedule"; },
+    openInstitution(i){ this.selectedInstitution=i; this.modal="institution"; },
+    openGroup(g){ this.selectedGroup=g; this.modal="group"; },
+    openArticle(a){ this.selectedArticle=a; this.goTo("article"); },
+    openAnnouncement(c){ this.selectedAnnouncement=c; this.goTo("communique-detail"); },
+
+    addComment(articleId){
+      if(!this.comments[articleId]) this.comments[articleId]=[];
+      this.comments[articleId].push({
+        id:Date.now(), name:this.newComment.name, role:this.newComment.role, text:this.newComment.text, time:"à l'instant"
+      });
+      this.newComment = {name:"", role:"", text:""};
+      this.showToast("Commentaire publié");
+    },
+
+    async loadPlatformData(){
+      const endpoint = '/api/';
+      // La BDD est l’unique source : aucun contenu statique n’est conservé en cas d’échec API.
+      this.heroSlides=[]; this.stats=[]; this.faculties=[]; this.articles=[]; this.announcements=[];
+      this.institutions=[]; this.groups=[]; this.buildings=[]; this.clinicServices=[]; this.testimonials=[]; this.gallery=[];
+      const settingsResponse = await fetch(endpoint+'settings/').then(r=>r.ok?r.json():[]).catch(()=>[]);
+      if(settingsResponse.length) this.site=settingsResponse[0];
+      const result = await Promise.allSettled(['hero-slides','statistics','faculties','articles','announcements','institutions','groups','buildings','services','testimonials','pages'].map(k=>fetch(endpoint+k+'/').then(r=>r.json())));
+      const rows = result.map(r=>r.status==='fulfilled' ? (r.value.results || r.value) : []);
+      const mapImage = x => ({...x, img:x.image_display || x.image_url});
+      if(rows[0].length) this.heroSlides=rows[0].map(mapImage);
+      if(rows[1].length) this.stats=rows[1].map(x=>({...x,display:0}));
+      if(rows[2].length) this.faculties=rows[2].map(x=>({...mapImage(x),short:x.short_description,full:x.description,options:x.programs}));
+      if(rows[3].length) this.articles=rows[3].map(x=>({...mapImage(x),cat:x.category,catColor:x.category_color,date:new Date(x.published_at).toLocaleDateString('fr-FR'),short:x.excerpt,full:x.content}));
+      if(rows[4].length) this.announcements=rows[4].map(x=>({...x,date:new Date(x.published_at).toLocaleDateString('fr-FR'),pdf:x.attachment_url,full:x.content}));
+      if(rows[5].length) this.institutions=rows[5].map(x=>({...mapImage(x),short:x.short_description,full:x.description}));
+      if(rows[6].length) this.groups=rows[6].map(x=>({...mapImage(x),desc:x.description,full:x.full_description,site:x.website,contact:x.contact_email}));
+      if(rows[7].length) this.buildings=rows[7].map(mapImage);
+      if(rows[8].length) this.clinicServices=rows[8].filter(x=>x.section==='clinic').map(x=>({i:x.icon,t:x.title,d:x.description}));
+      if(rows[9].length) this.testimonials=rows[9].map(x=>({...x,avatar:x.avatar_display || x.avatar_url}));
+      const aboutPage = rows[10].find(x=>x.key==='about');
+      if(aboutPage) this.about={
+        ...this.about,
+        image:aboutPage.image_display || aboutPage.image_url || this.about.image,
+        highlight_value:aboutPage.highlight_value || this.about.highlight_value,
+        highlight_label:aboutPage.highlight_label || this.about.highlight_label,
+        subtitle:aboutPage.subtitle || this.about.subtitle,
+        title:aboutPage.title || this.about.title,
+        content:aboutPage.content || this.about.content,
+      };
+      this.loadGallery(1);
+    },
+    async loadGallery(page){
+      if(page < 1 || (this.galleryPages && page > this.galleryPages)) return;
+      const r = await fetch('/api/gallery/?page='+page); if(!r.ok) return; const data=await r.json();
+      this.gallery=data.results || data; this.galleryPage=page; this.galleryPages=data.count ? Math.ceil(data.count/(data.results.length || 1)) : 1;
+    },
+    async submitRegistration(preview){
+      if(preview){ this.goTo("inscription"); return; }
+      const form = new FormData();
+      form.append('last_name',this.reg.nom); form.append('middle_name',this.reg.postnom); form.append('first_name',this.reg.prenom);
+      form.append('faculty',this.reg.faculte); form.append('motivation',this.reg.motivation);
+      if(this.$refs.registrationDocument.files[0]) form.append('document',this.$refs.registrationDocument.files[0]);
+      const csrf=document.cookie.split('; ').find(row=>row.startsWith('csrftoken='))?.split('=')[1];
+      const response=await fetch('/api/registrations/',{method:'POST',body:form,credentials:'same-origin',headers:csrf?{'X-CSRFToken':csrf}:{}});
+      if(!response.ok){ const error=await response.json().catch(()=>({})); this.showToast(Object.values(error).flat().join(' ')||"Une erreur est survenue. Réessayez."); return; }
+      this.reg.submitted = true;
+      window.scrollTo({top:0, behavior:"smooth"});
+      this.showToast("Inscription envoyée avec succès");
+    },
+
+    showToast(msg){ this.toast = msg; setTimeout(()=> this.toast=null, 3000); },
+
+    initVideo(){
+      if(window.videojs && document.getElementById("campus-video") && !document.getElementById("campus-video").classList.contains("vjs-ready-init")){
+        videojs("campus-video");
+        document.getElementById("campus-video").classList.add("vjs-ready-init");
+      }
+    }
+  }
+}
+</script>
+</body>
+</html>
