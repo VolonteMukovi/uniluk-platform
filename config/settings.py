@@ -30,6 +30,15 @@ load_env_file(BASE_DIR / '.env')
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'change-me-in-production')
 DEBUG = os.environ.get('DJANGO_DEBUG', 'True').lower() == 'true'
 ALLOWED_HOSTS = [h.strip() for h in os.environ.get('DJANGO_ALLOWED_HOSTS', '*').split(',') if h.strip()]
+# Les valeurs doivent inclure le protocole (ex. https://uniluk.acadstore.store).
+CSRF_TRUSTED_ORIGINS = [
+    origin.strip()
+    for origin in os.environ.get(
+        'DJANGO_CSRF_TRUSTED_ORIGINS',
+        'https://uniluk.acadstore.store',
+    ).split(',')
+    if origin.strip()
+]
 
 if '*' not in ALLOWED_HOSTS and ('127.0.0.1' in ALLOWED_HOSTS or 'localhost' in ALLOWED_HOSTS):
     for h in ('testserver', '[::1]'):
